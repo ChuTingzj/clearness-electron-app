@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "watch": ["electron/"],
+  "delay": 1000,
+  "exec": "pnpm prestart",
+  "ext": "ts"
+}
