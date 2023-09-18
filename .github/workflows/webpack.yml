@@ -40,3 +40,7 @@ jobs:
   
     - name: Publish
       run: pnpm pub
+
+    - uses: softprops/action-gh-release@v1
+      with:
+       files: out/*
