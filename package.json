@@ -15,8 +15,7 @@
     "prestart": "ts-node ./scripts/concurrent.ts",
     "start": "pnpm prestart && electron-forge start",
     "poststart": "pnpm nodemon --config ./nodemon.json",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "publish": "electron-forge publish"
   },
   "dependencies": {
     "@electron-forge/cli": "^6.4.2",

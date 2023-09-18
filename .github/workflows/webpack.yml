@@ -9,7 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     strategy:
       matrix:
         node-version: [20.5.1]
@@ -36,6 +37,6 @@ jobs:
       
     - name: Setup electron-forge 
       run:  pnpm electron-forge import
-      
-    - name: Release
-      run: pnpm run package && pnpm run make
+  
+    - name: Publish
+      run: pnpm publish
