@@ -31,11 +31,11 @@ jobs:
     - name: Install dependence
       run: pnpm i
 
-    - name: Setup electron-forge 
-      run:  pnpm electron-forge import
-
     - name: Generate Electron
       run: pnpm run "/^build:.*/"
-
+      
+    - name: Setup electron-forge 
+      run:  pnpm electron-forge import
+      
     - name: Release
       run: pnpm run package && pnpm run make
