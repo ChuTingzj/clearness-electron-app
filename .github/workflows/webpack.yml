@@ -32,7 +32,7 @@ jobs:
       run: pnpm i
 
     - name: Setup electron-forge 
-      run: sudo pnpx electron-forge import -y
+      run:  pnpm electron-forge import
 
     - name: Generate Electron
       run: pnpm run "/^build:.*/"
